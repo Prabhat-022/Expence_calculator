@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  Top Heading -->
+    <h2>Expence Tracker</h2>
+
+    <div class="container">
+        <h2>Your Balance</h2>
+        <h1 id="balance">$000.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>INCOME</h4>
+                <p id="money-plus" class="money plus">$000.00</p>
+            </div>
+            <div>
+                <h4>EXPENCE</h4>
+                <p id="money-minus" class="money minus">$000.00</p>
+            </div>
+        </div>
+
+        <div id="history">
+            <h3>History</h3>
+            <h3>  <button id ="Clear"> Clear All</button> </h3>
+           
+        </div>
+        <hr>
+
+        <ul id="list" class="list">
+
+            <li class="plus">
+                Cash <span>+$400</span><button class="delete-btn">x</button>
+            </li>
+            <li class="minus">
+                Laptop <span>-$400</span><button class="delete-btn">x</button>
+            </li>
+            <li class="minus">
+                Iphone <span>-$400</span><button class="delete-btn">x</button>
+            </li>
+        </ul>
+        <h3>Add New Transactions</h3>
+
+        <form id="form">
+            <div class="form-container">
+                <label for="text">
+                    Text
+                </label>
+                <input type="text" id="text" placeholder="Enter History">
+            </div>
+            <div class="form-container">
+                <label for="Amount">
+                    Amount
+                </label>
+                <p>(Negative -Expence, Positive +Income)</p>
+                <input type="number" id="amount" placeholder="Enter Amount">
+            </div>
+            <button class="btn">Add transaction</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
